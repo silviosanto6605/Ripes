@@ -27,6 +27,9 @@ private:
   QTextCharFormat stringFormat;
   QTextCharFormat commentFormat;
   QTextCharFormat immediateFormat;
+
+  // New color constant for lighter color
+  static constexpr QColor LighterColor = QColor(0x33, 0x55, 0xbb); // Pdc60
 };
 
 } // namespace Ripes

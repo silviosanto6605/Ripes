@@ -31,7 +31,7 @@ RVSyntaxHighlighter::RVSyntaxHighlighter(
   }
 
   // Instructions
-  instructionFormat.setForeground(Colors::BerkeleyBlue);
+  instructionFormat.setForeground(Colors::FoundersRock);
   for (const auto &pattern : supportedOpcodes) {
     const QString regexPattern = "\\b" + pattern + "\\b";
     rule.pattern = QRegularExpression(regexPattern);
