@@ -7,11 +7,12 @@
 namespace Ripes {
 namespace Colors {
 
-constexpr QColor BerkeleyBlue = {0x00, 0x32, 0x62};
+constexpr QColor BerkeleyBlue = {0x33, 0x66, 0x99}; // Colore blu più chiaro
 constexpr QColor FoundersRock = {0x3B, 0x7E, 0xA1};
 constexpr QColor CaliforniaGold = {0xFD, 0xB5, 0x15};
 constexpr QColor Medalist = {0xC4, 0x82, 0x0E};
 constexpr QColor FlatGreen = {0x4c, 0xde, 0x75};
+constexpr QColor LighterRed = QColorConstants::Red.lighter(120); // Colore rosso più chiaro
 
 // Returns a function which returns a lighter color on each instantiation
 inline std::function<QColor()> incrementalColorGenerator(const QColor &start,
